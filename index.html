@@ -1,6 +1,21 @@
 <DOCTYPE! html>
-    <html>
-        <body>
-            
-        </body>
+   <html>
+ <body>
+  <form id="form">
+    <fieldset name="userFields">
+      <legend>info</legend>
+      <input name="login" type="text">
+    </fieldset>
+  </form>
+
+  <script>
+    alert(form.elements.login); // <input name="login">
+
+    let fieldset = form.elements.userFields;
+    alert(fieldset); // HTMLFieldSetElement
+
+    // мы можем достать элемент по имени как из формы, так и из fieldset с ним
+    alert(fieldset.elements.login == form.elements.login); // true
+  </script>
+</body>
     </html>
