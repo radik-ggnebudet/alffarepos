@@ -30,10 +30,13 @@
    <button onclick="odin()">Говядина</button></br>
    <button>Рыба</button></br>
 <h2>Вы пьете кофе?</h2></br>
-   <button onclick="vosem()">Курица</button></br>
-   <button onclick="piat()">Свинина</button></br>
-   <button onclick="odin()">Говядина</button></br>
-   <button>Рыба</button></br>
+   <button onclick="vosem()">Да</button></br>
+   <button onclick="piat()">Нет</button></br>
+   <button onclick="odin()">Я чай пью</button></br>
+   <button onclick="odin()">Я мегафон</button></br>
+<h2>ПОДСЧЕТ РЕЗУЛЬТАТОВ</h2></br>
+<p>Подсчитать результаты: </p><button onclick ="chet()">ЖМИ</button>
+
 
     
     
@@ -134,6 +137,34 @@ let godiki = 0;
      godiki = godiki + 23;
       console.log(godiki);
   };
+ function chet(){
+  if (godiki > 66){
+     alert("Вы просроченная шаурма! Сколько вам вообще лет?")
+  };
+  if (61 < godiki < 66){
+     alert("Вы шаурма из курицы!")
+  };
+  if (50 < godiki < 61){
+     alert("Вы мегафон!")
+  };
+  if (40 < godiki < 50){
+     alert("Вы мегафон!")
+  };
+  if (30 < godiki < 40){
+     alert("Вы шаурма с рынка!")
+  };
+  if (10 < godiki < 30){
+     alert("Вы маленькая шаурма!")
+  };
+  if (0 < godiki < 10){
+     alert("Вы дельфин!")
+  };
+  if (godiki < 0){
+     alert("Вас не существует!")
+  };
+   
+    
+ };
         
   </script>
     </html>
