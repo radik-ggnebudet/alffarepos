@@ -7,33 +7,33 @@
     <title>тестик</title>
     <h1>Тест: какая вы шаурма?</h1></br>
       <h2>На какой вы стадии обучения?</h2></br>
-   <button onclick="trinad()">Еще не закончил 9 класс</button></br>
-   <button onclick="piatnad()">Закончил 9 классов</button></br>
-   <button onclick="vosemnad()">Закончил 11 классов</button></br>
-   <button onclick="dvatsatodin()">Закончил университет/институт</button></br>
+   <button onclick="odin()">Еще не закончил 9 класс</button></br>
+   <button onclick="dva()">Закончил 9 классов</button></br>
+   <button onclick="tri()">Закончил 11 классов</button></br>
+   <button>Закончил университет/институт</button></br>
 <h2>Можно ли вам пить пиво?</h2></br>
-   <button onclick="piat()">Да</button></br>
+   <button onclick="odin()">Да</button></br>
    <button>Нет</button></br>
 <h2>У вас есть работа?</h2></br>
-   <button onclick="vosem()">Да, бизнес</button></br>
-   <button onclick="piat()">Да, обычная работа</button></br>
-   <button onclick="tri()">Нет, я безработный</button></br>
+   <button>Да, бизнес</button></br>
+   <button onclick="odin()">Да, обычная работа</button></br>
+   <button onclick="dva()">Нет, я безработный</button></br>
    <button>Нет, я еще маленький</button></br>
 <h2>Как вы относитесь?</h2></br>
-   <button onclick="vosem()">Норм</button></br>
-   <button onclick="piat()">Не очень</button></br>
-   <button onclick="odin()">Офигенно</button></br>
+   <button onclick="odin()">Норм</button></br>
+   <button onclick="dva()">Не очень</button></br>
+   <button>Офигенно</button></br>
    <button>Мне пуфик</button></br>
 <h2>Какое мясо вы любите больше всего?</h2></br>
-   <button onclick="vosem()">Курица</button></br>
-   <button onclick="piat()">Свинина</button></br>
-   <button onclick="odin()">Говядина</button></br>
+   <button onclick="odin()">Курица</button></br>
+   <button onclick="dva()">Свинина</button></br>
+   <button>Говядина</button></br>
    <button>Рыба</button></br>
 <h2>Вы пьете кофе?</h2></br>
-   <button onclick="vosem()">Да</button></br>
-   <button onclick="piat()">Нет</button></br>
+   <button onclick="dva()">Да</button></br>
+   <button>Нет</button></br>
    <button onclick="odin()">Я чай пью</button></br>
-   <button onclick="odin()">Я мегафон</button></br>
+   <button>Я мегафон</button></br>
 <h2>ПОДСЧЕТ РЕЗУЛЬТАТОВ</h2></br>
 <p>Подсчитать результаты: </p><button onclick ="chet()">ЖМИ</button>
 
@@ -138,42 +138,48 @@ let godiki = 0;
       console.log(godiki);
   };
  function chet(){
-  if (godiki > 66){
-     alert("Вы просроченная шаурма! Сколько вам вообще лет?")
-  }
-    else{
-  if (61 < godiki < 66){
-     alert("Вы шаурма из курицы!")
-  }
-    else{
-  if (50 < godiki < 61){
-     alert("Вы мегафон!")
-  }
-    else{
-  if (40 < godiki < 50){
-     alert("Вы мегафон!")
-  }
-    else{
-  if (30 < godiki < 40){
-     alert("Вы шаурма с рынка!")
-  }
-    else{
-  if (10 < godiki < 30){
-     alert("Вы маленькая шаурма!")
-  }
-    else{
-  if (0 < godiki < 10){
-     alert("Вы дельфин!")
-  }
-    else{
-  if (godiki < 0){
-     alert("Вас не существует!")
-  }
-    else{
-       console.log("что-то не то...")
-   
-    
- };
+  switch(godiki) {
+  case '0':
+    alert("Вы шаурма из курицы!")
+   break;
+  case '1':
+    alert("Вы шаурма из гнилого бомжа!")
+   break;
+  case '2':
+    alert("Вы мегафон!")
+   break;
+  case '3':
+    alert("Вы рандомное")
+   break;
+  case '4':
+    alert("Вы рандог")
+   break;
+  case '5':
+    alert("Вы митил")
+   break;
+  case '6':
+    alert("Вы радомин")
+   break;
+  case '7':
+    alert("Вы елки палки")
+   break;
+  case '8':
+    alert("Вы шаурма из меня")
+   break;
+  case '9':
+    alert("Вы Мясо для шаурмы")
+   break;
+  case '10':
+    alert("Вы выпускник 9 класса")
+   break;
+  case '11':
+    alert("Вы не вы когда голодны!")
+   break;
+  case '12':
+    alert("Вы шаурма из курицы!")
+   break;
+
+}
         
   </script>
     </html>
