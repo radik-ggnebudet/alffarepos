@@ -10,3 +10,8 @@ h1 {
   font-family: Georgia, Times, serif; /* Семейство шрифтов */
   font-weight: normal; /* Нормальное начертание текста  */
 }
+marquee {
+  font-size: 30pt;
+  color: red;
+  
+}
